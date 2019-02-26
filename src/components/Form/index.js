@@ -4,9 +4,9 @@ import FuelPrice from '../FuelPrice';
 import './style.css';
 
 const Form = () => {
-  const [fuelPrice, setFuelPrice] = useState(0)
-  const [requestPrice, setRequestPrice] = useState(0)
-  const [realPricePaid, setRealPricePaid] = useState(0)
+  const [fuelPrice, setFuelPrice] = useState()
+  const [requestPrice, setRequestPrice] = useState()
+  const [realPricePaid, setRealPricePaid] = useState()
 
   return (
     <div className='form'>
@@ -18,14 +18,14 @@ const Form = () => {
       />
 
       <Field
-        label='Valor pago sem desconto'
+        label='Valor total a pagar na bomba'
         description='Valor solicitado no app Abastece Ai'
         value={requestPrice}
         setter={setRequestPrice}
       />
 
       <Field
-        label='Valor pago com desconto com km de vantagem'
+        label='Valor pago com desconto do km de vantagem'
         description='Valor pago na app Abastece Ai'
         value={realPricePaid}
         setter={setRealPricePaid}

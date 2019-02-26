@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component matches snapshot 1`] = `
+<div
+  className="form"
+>
+  <Field
+    description="Valor do combustível divulgado no posto sem km de vantagem"
+    label="Valor do combustível"
+    setter={[Function]}
+  />
+  <Field
+    description="Valor solicitado no app Abastece Ai"
+    label="Valor total a pagar na bomba"
+    setter={[Function]}
+  />
+  <Field
+    description="Valor pago na app Abastece Ai"
+    label="Valor pago com desconto do km de vantagem"
+    setter={[Function]}
+  />
+  <FuelPrice />
+</div>
+`;
