@@ -1,13 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './style.css';
 
 const Header = () => (
-  <img
-    className='logo'
-    alt='Logotipo do site'
-    src={logo}
-  />
+  <header className='header'>
+    <h1>Abastece Aí</h1>
+    <h3>Custo Benefício</h3>
+  </header>
 );
 
 export default Header;

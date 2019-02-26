@@ -6,7 +6,7 @@ const Footer = () => (
     <div className='line' />
     <p>
       Made with <span className="red">❤︎</span> by <a href="https://twitter.com/FelipeNolleto">nolleto</a>.
-      Find this on <a href="https://github.com/nolleto/mineires-translator-app">github</a>
+      Find this on <a href="https://github.com/nolleto/abastece-ai-custo-beneficio-app">github</a>
     </p>
   </footer>
 );

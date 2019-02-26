@@ -1,4 +1,14 @@
+.header h1 {
+  margin-bottom: 5px;
+}
+
+.header h3 {
+  margin-top: 0;
+}
+
 .logo {
-  height: 40vmin;
+  width: auto;
+  height: auto;
+  max-width: 80px;
   pointer-events: none;
 }

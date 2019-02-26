@@ -1,14 +1,11 @@
 import React from 'react';
+import { hasValues, getLiters, getRealFuelPrice } from '../../fuelPrice';
 import './style.css';
 
-const FuelPrice = ({ valorCombustivel, valorInteiroPago, valorRealPago}) => {
-  const hasValue = value => value > 0;
-  const hasValues = (...values) => values.every(hasValue)
-  const hasValorRealCombustivel = hasValues(valorCombustivel, valorInteiroPago, valorRealPago);
-  const getLitrosAbastecidos = () => valorInteiroPago / valorCombustivel;
-  const getValorRealCombustivel = () => (valorRealPago / getLitrosAbastecidos()).toFixed(2);
+const FuelPrice = ({ fuelPrice, requestPrice, realPricePaid }) => {
+  const hasAllValues = hasValues(fuelPrice, requestPrice, realPricePaid);
 
-  if (!hasValorRealCombustivel) {
+  if (!hasAllValues) {
     return (
       <p className='text'>
         Preencha os campos acima para obter o valor do combustível.
@@ -16,9 +13,12 @@ const FuelPrice = ({ valorCombustivel, valorInteiroPago, valorRealPago}) => {
     );
   }
 
+  const liters = getLiters(requestPrice, fuelPrice);
+  const price = getRealFuelPrice(liters, realPricePaid);
+
   return (
     <p className='text'>
-      O valor do combustível é de R$ {getValorRealCombustivel()}
+      O valor do combustível é de R$ {price.toFixed(2)} ({liters.toFixed(2)} litros abastecidos)
     </p>
   );
 };
