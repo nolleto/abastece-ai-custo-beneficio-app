@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FuelPrice component matches snapshot when has all values 1`] = `
+<p
+  className="text"
+>
+  O valor do combustível é de R$ 
+  1.60
+   (
+  25.00
+   litros abastecidos)
+</p>
+`;
+
+exports[`FuelPrice component matches snapshot when has no values 1`] = `
+<p
+  className="text"
+>
+  Preencha os campos acima para obter o valor do combustível.
+</p>
+`;
