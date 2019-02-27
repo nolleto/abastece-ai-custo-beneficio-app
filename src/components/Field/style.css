@@ -7,8 +7,13 @@
 }
 
 .field__label {
+  text-align: start;
+}
+
+.field__description {
   margin-bottom: 5px;
   text-align: start;
+  font-size: 12px;
 }
 
 .field__input {

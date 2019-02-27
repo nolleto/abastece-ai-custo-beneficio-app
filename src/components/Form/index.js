@@ -4,29 +4,32 @@ import FuelPrice from '../FuelPrice';
 import './style.css';
 
 const Form = () => {
-  const [fuelPrice, setFuelPrice] = useState()
-  const [requestPrice, setRequestPrice] = useState()
-  const [realPricePaid, setRealPricePaid] = useState()
+  const [fuelPrice, setFuelPrice] = useState();
+  const [requestPrice, setRequestPrice] = useState();
+  const [realPricePaid, setRealPricePaid] = useState();
 
   return (
     <div className='form'>
       <Field
         label='Valor do combustível'
-        description='Valor do combustível divulgado no posto sem km de vantagem'
+        description='Valor do combustível divulgado no posto'
+        placeholder={'Ex.: 3,759'}
         value={fuelPrice}
         setter={setFuelPrice}
       />
 
       <Field
         label='Valor total a pagar na bomba'
-        description='Valor solicitado no app Abastece Ai'
+        description='É o mesmo valor solicitado no app Abastece Aí'
+        placeholder={'Ex.: 50,00'}
         value={requestPrice}
         setter={setRequestPrice}
       />
 
       <Field
         label='Valor pago com desconto do km de vantagem'
-        description='Valor pago na app Abastece Ai'
+        description='Valor final a pagar no app Abastece Aí'
+        placeholder={'Ex.: 47,50'}
         value={realPricePaid}
         setter={setRealPricePaid}
       />
@@ -37,7 +40,7 @@ const Form = () => {
         realPricePaid={realPricePaid}
       />
     </div>
-  )
-}
+  );
+};
 
 export default Form;

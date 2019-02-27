@@ -1,10 +1,13 @@
 import React from 'react'
 import './style.css';
 
-const Field = ({ label, description, value, setter }) => (
+const Field = ({ label, description, placeholder, value, setter }) => (
   <label className='field'>
-    <span className='field__label' title={description}>
+    <span className='field__label'>
       {label}:
+    </span>
+    <span className='field__description'>
+      {description}
     </span>
 
     <input
@@ -12,6 +15,7 @@ const Field = ({ label, description, value, setter }) => (
       type='number'
       step='.01'
       value={value}
+      placeholder={placeholder}
       onChange={({ target }) => setter(target.value)}
     />
   </label>
