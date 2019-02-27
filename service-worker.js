@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/abastece-ai-custo-beneficio-app/precache-manifest.bc5f98314e48bce03d85441130f2e18c.js"
+  "/abastece-ai-custo-beneficio-app/precache-manifest.312e20ad09079323aad4c3549faed3b0.js"
 );
 
 workbox.clientsClaim();
