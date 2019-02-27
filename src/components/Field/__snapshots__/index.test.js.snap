@@ -6,10 +6,14 @@ exports[`Field component matches snapshot 1`] = `
 >
   <span
     className="field__label"
-    title="description"
   >
     label
     :
+  </span>
+  <span
+    className="field__description"
+  >
+    description
   </span>
   <input
     className="field__input"
