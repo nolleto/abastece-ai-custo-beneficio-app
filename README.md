@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/nolleto/abastece-ai-custo-beneficio-app.svg?branch=master)](https://travis-ci.org/nolleto/abastece-ai-custo-beneficio-app)
+[![Coverage Status](https://coveralls.io/repos/github/nolleto/abastece-ai-custo-beneficio-app/badge.svg?branch=add-coveralls)](https://coveralls.io/github/nolleto/abastece-ai-custo-beneficio-app?branch=add-coveralls)
 
 # Abastece Aí Custo Benefício
 
