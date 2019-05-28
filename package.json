@@ -14,7 +14,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "coveralls": "npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,6 +27,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "coveralls": "^3.0.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "enzyme-to-json": "^3.3.5",
